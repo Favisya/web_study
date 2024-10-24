@@ -1,0 +1,22 @@
+.contact-form-btn {
+  display: flex;
+  justify-content: center;
+
+  &__btn {
+    padding: 10px 15px;
+
+    background: #fff;
+    border-radius: 0;
+    border: 1px solid #5C80BC;
+    color: #5C80BC;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+      background: #5C80BC;
+      border: 1px solid #5C80BC;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  background: #5C80BC;
+  color: #fff;
+  padding: 20px;
+
+  &__text {
+    text-transform: uppercase;
+  }
+}

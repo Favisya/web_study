@@ -1,0 +1,10 @@
+.contacts {
+  max-width: 1440px;
+  height: 90vh;
+
+  overflow-y: scroll;
+
+  &__add-contact {
+    margin-top: 20px;
+  }
+}

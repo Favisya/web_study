@@ -1,0 +1,28 @@
+.header {
+  background: #5C80BC;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    list-style-type: none;
+  }
+
+  &__nav-bar {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  &__link {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: #4D5061;
+    }
+  }
+}
