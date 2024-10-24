@@ -1,0 +1,27 @@
+.contact-form {
+  &__input {
+    margin-left: 10px;
+
+    padding: 10px 15px;
+  }
+
+  &__btn {
+    margin-left: 10px;
+
+    padding: 10px 15px;
+
+    background: #fff;
+    border-radius: 0;
+    border: 1px solid #648751;
+    color: #648751;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+      background: #648751;
+      border: 1px solid #648751;
+      color: #fff;
+    }
+  }
+}

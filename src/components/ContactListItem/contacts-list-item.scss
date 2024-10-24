@@ -1,0 +1,39 @@
+.contacts-list-item {
+
+  margin: 20px 0;
+  padding: 20px 30px;
+
+  border: 2px solid #5C80BC;
+  border-radius: 10px;
+
+  &__btns-wr {
+    display: flex;
+
+    margin-top: 20px;
+  }
+
+  &__delete-btn {
+    margin-left: 20px;
+
+    padding: 10px 15px;
+
+    background: #fff;
+    border-radius: 0;
+    border: 1px solid #E87048;
+    color: #E87048;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+      background: #E87048;
+      border: 1px solid #E87048;
+      color: #fff;
+    }
+  }
+
+  &__info-item {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+}
