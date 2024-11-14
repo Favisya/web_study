@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { addContact, editContact } from '../../actions/actions';
-import { store } from '../../index';
 import './contact-form.scss'
+import contactStore from '../../contactStore';
 
 function ContactForm(props) {
     const [contact, setContact] = useState({
@@ -22,7 +21,7 @@ function ContactForm(props) {
         e.preventDefault();
 
         if (!contact.id) {
-            store.dispatch(addContact(contact));
+            contactStore.addContact(contact);
             props.setShow();
             setContact({});
 
@@ -30,7 +29,7 @@ function ContactForm(props) {
         }
 
         props.setShow();
-        store.dispatch(editContact(contact))
+        contactStore.updateContact(contact);
     };
 
     return (

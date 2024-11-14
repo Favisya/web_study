@@ -1,11 +1,11 @@
 import React from 'react';
 import ContactListItem from '../ContactListItem/ContactListItem';
-import { useSelector } from 'react-redux';
-import { getContacts } from '../../selectors/contactsSelector';
 import './contacts-list.scss';
+import ContactStore from '../../contactStore';
+import { observer } from 'mobx-react';
 
-function ContactList( onContactClick) {
-    const contacts = useSelector(getContacts);
+const ContactList = observer((onContactClick) => {
+    const contacts = ContactStore.getContactList;
 
     return (
         <ul className={'contacts-list'}>
@@ -18,6 +18,6 @@ function ContactList( onContactClick) {
             ))}
         </ul>
     );
-}
+})
 
 export default ContactList;

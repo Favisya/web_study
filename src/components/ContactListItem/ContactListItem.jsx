@@ -1,12 +1,11 @@
 import React from 'react';
-import { store } from '../../index';
-import { deleteContact } from '../../actions/actions';
 import ContactsFormBtn from '../ContactFormBtn/ContactFormBtn';
 import './contacts-list-item.scss';
+import contactStore from '../../contactStore';
 
 function ContactListItem(props) {
-    const handleDeleteContact = () => {
-        store.dispatch(deleteContact(props.contact.id));
+    const removeContact = () => {
+        contactStore.removeContact(props.contact)
     };
 
     return (
@@ -34,7 +33,7 @@ function ContactListItem(props) {
 
                 <button
                     className={'contacts-list-item__delete-btn'}
-                    onClick={handleDeleteContact}
+                    onClick={removeContact}
                 >
                     Delete
                 </button>
